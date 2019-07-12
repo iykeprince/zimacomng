@@ -1,0 +1,148 @@
+<div class="header-main">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-sm-4 col-7">
+                    <div class="top-bar-left d-flex">
+                        <div class="clearfix">
+                            <ul class="socials">
+                                <li> <a class="social-icon text-dark" href="#"><i class="fa fa-facebook"></i></a> </li>
+                                <li> <a class="social-icon text-dark" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li> <a class="social-icon text-dark" href="#"><i class="fa fa-linkedin"></i></a> </li>
+                                <li> <a class="social-icon text-dark" href="#"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-sm-8 col-5">
+                    <div class="top-bar-right">
+                        <ul class="custom">
+                            <li> <a data-toggle="modal" data-target="#LoginModal" class="text-dark"><i
+                                        class="fa fa-user mr-1"></i> <span>Register</span></a> </li>
+                            <li> <a data-toggle="modal" data-target="#LoginModal" class="text-dark"><i
+                                        class="fa fa-sign-in mr-1"></i> <span>Login</span></a> </li>
+                            <li class="dropdown"> <a href="#" class="text-dark" data-toggle="dropdown"><i
+                                        class="fa fa-home mr-1"></i><span> My Dashboard</span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a href="mydash.html" class="dropdown-item"> <i
+                                            class="dropdown-icon icon icon-user"></i> My Profile </a>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon icon icon-speech"></i>
+                                        Inbox </a>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon icon icon-bell"></i>
+                                        Notifications </a>
+                                    <a href="mydash.html" class="dropdown-item"> <i
+                                            class="dropdown-icon  icon icon-settings"></i> Account Settings </a>
+                                    <a class="dropdown-item" href="#"> <i class="dropdown-icon icon icon-power"></i> Log
+                                        out </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Header -->
+    <div class="horizontal-header clearfix ">
+        <div class="container"> <a id="horizontal-navtoggle" class="animated-arrow"><span></span></a> <span
+                class="smllogo"><img src="assets/images/brand/zima-logo.png" width="120" alt=""></span> <a
+                href="tel:245-6325-3256" class="callusbtn"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- /Mobile Header -->
+    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;">
+        <div class="horizontal-main bg-dark-transparent clearfix" style="width: 1519.2px;">
+            <div class="horizontal-mainwrapper container clearfix">
+                <div class="desktoplogo">
+                    <a href="index.html"><img src="assets/images/brand/zima-logo.png" style="width: 38%" alt=""></a>
+                </div>
+                <div class="desktoplogo-1">
+                    <a href="index.html"><img src="assets/images/brand/zima-logo.png" style="width: 38%" alt=""></a>
+                </div>
+                <!--Nav-->
+                <nav class="horizontalMenu clearfix d-md-flex">
+                    <div class="overlapblackbg"></div>
+                    <ul class="horizontalMenu-list">
+                        <li aria-haspopup="true"><span class="horizontalMenu-click"></span><a href="#"
+                                class="active">Home </a>
+
+                        </li>
+                        <li aria-haspopup="true"><span class="horizontalMenu-click"><i
+                                    class="horizontalMenu-arrow fa fa-angle-down"></i></span><a href="#">Categories
+                                <span class="fa fa-caret-down m-0"></span></a>
+                            <ul class="sub-menu">
+                                <li aria-haspopup="true"><a href="classified.html">Classifieds Left</a></li>
+                                <li aria-haspopup="true"><a href="classified-right.html">Classifieds Rights </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li aria-haspopup="true"><a href="about.html">About Us </a></li>
+                        <li aria-haspopup="true"><a href="widgets.html">F.A.Q</a></li>
+                        <li aria-haspopup="true"><a href="contact.html"> Contact Us <span class="wsarrow"></span></a>
+                        </li>
+                        <li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0"> <span><a class="btn btn-red"
+                                    href="ad-posts.html">Sell Now</a></span> </li>
+                    </ul>
+                    <ul class="mb-0">
+                        <li aria-haspopup="true" class="mt-5 d-none d-lg-block "> <span><a class="btn btn-red ad-post"
+                                    href="ad-posts.html">Sell Now</a></span> </li>
+                    </ul>
+                </nav>
+                <!--Nav-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Login Modal-->
+<div id="LoginModal" class="modal fade" aria-modal="true" style="padding-right: 16px; display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                        aria-hidden="true">×</span> </button>
+            </div>
+            <div class="modal-body">
+                <div class="single-page customerpage ">
+                    <div class="wrapper wrapper2 box-shadow-0">
+                        <form id="login" class="card-body" tabindex="500">
+                            <div class="mail">
+                                <input type="email" name="mail">
+                                <label>Mail or Username</label>
+                            </div>
+                            <div class="passwd">
+                                <input type="password" name="password">
+                                <label>Password</label>
+                            </div>
+                            <div class="submit"> <a class="btn btn-primary btn-block" href="index.html">Login</a> </div>
+                            <p class="mb-2"><a href="forgot.html">Forgot Password</a></p>
+                            <p class="text-dark mb-0">Don't have account?<a href="register.html"
+                                    class="text-primary ml-1">Sign UP</a></p>
+                        </form>
+                        <hr class="divider">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <div class="btn-group">
+                                    <a href="https://www.facebook.com/" class="btn btn-icon mr-2 brround"> <span
+                                            class="fa fa-facebook"></span> </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="https://www.google.com/gmail/" class="btn  mr-2 btn-icon brround">
+                                        <span class="fa fa-google"></span> </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="https://twitter.com/" class="btn  btn-icon brround"> <span
+                                            class="fa fa-twitter"></span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
