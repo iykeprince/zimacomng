@@ -1,0 +1,8 @@
+{
+   "/php/*":{
+      "target": "localhost/zimacomng/zimacomng",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+   }
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "zimacomng": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/zimacomng",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/assets/plugins/bootstrap-4.3.1-dist/css/bootstrap.min.css",
+              "src/assets/css/dashboard.css",
+              "src/assets/css/icons.css",
+              "src/assets/plugins/Horizontal2/Horizontal-menu/dropdown-effects/fade-down.css",
+              "src/assets/plugins/Horizontal2/Horizontal-menu/horizontal.css",
+              "src/assets/plugins/select2/select2.min.css",
+              "src/assets/plugins/cookie/cookie.css",
+              "src/assets/plugins/owl-carousel/owl.carousel.css",
+              "src/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css",
+              "src/assets/switcher/css/switcher.css",
+              "src/assets/webslidemenu/color-skins/color10.css",
+              "src/assets/webslidemenu/demo.css"
+            ],
+            "scripts": [
+              "src/assets/js/vendors/jquery-3.2.1.min.js",
+              "src/assets/plugins/bootstrap-4.3.1-dist/js/bootstrap.min.js",
+              "src/assets/plugins/bootstrap-4.3.1-dist/js/popper.min.js",
+              "src/assets/js/vendors/jquery.sparkline.min.js",
+              "src/assets/js/vendors/circle-progress.min.js",
+              "src/assets/plugins/rating/jquery.rating-stars.js",
+              "src/assets/plugins/counters/counterup.min.js",
+              "src/assets/plugins/counters/waypoints.min.js",
+              "src/assets/plugins/counters/numeric-counter.js",
+              "src/assets/plugins/owl-carousel/owl.carousel.js",
+              "src/assets/plugins/Horizontal2/Horizontal-menu/horizontal.js",
+              "src/assets/js/jquery.touchSwipe.min.js",
+              "src/assets/plugins/select2/select2.full.min.js",
+              "src/assets/js/select2.js",
+              "src/assets/js/sticky.js",
+              "src/assets/switcher/js/switcher.js",
+              "src/assets/plugins/cookie/jquery.ihavecookies.js",
+              "src/assets/plugins/cookie/cookie.js",
+              "src/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js",
+              "src/assets/js/swipe.js",
+              "src/assets/js/scripts2.js",
+              "src/assets/js/custom.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "zimacomng:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "zimacomng:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "zimacomng:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "zimacomng-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "zimacomng:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "zimacomng:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "zimacomng"
+}
