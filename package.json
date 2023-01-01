@@ -23,11 +23,11 @@
     "core-js": "^2.5.4",
     "ngx-owl-carousel": "^2.0.7",
     "rxjs": "^6.0.0",
-    "webpack": "^4.35.3",
+    "webpack": "^5.75.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.7.5",
+    "@angular-devkit/build-angular": "^15.0.4",
     "@angular/cli": "~6.1.1",
     "@angular/compiler-cli": "^8.1.0",
     "@angular/language-service": "^6.1.0",
